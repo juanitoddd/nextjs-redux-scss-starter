@@ -1,0 +1,33 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .content {
+
+        min-height: $topbar-height;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        padding: 20px;
+        border-bottom: 1px solid #555;
+
+        .section {
+            display: flex;
+
+            &.left{
+
+            }
+
+            &.right {
+                flex-direction: row-reverse;
+            }
+
+            .item {
+                margin: 0 10px;
+            }
+        }
+    }
+}

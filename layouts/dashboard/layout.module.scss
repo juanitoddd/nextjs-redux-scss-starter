@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+
+.container {
+    .content {
+        margin-top: $topbar-height;
+    }
+}
